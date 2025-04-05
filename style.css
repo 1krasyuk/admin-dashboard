@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: rgb(59, 180, 255);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-icon {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  transition: all 0.3s ease;
+}
+
+.menu-text {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+/*Animations*/
+
+.menu-item:hover {
+  transform: scale(1.1);
+}
+
+/* Styles for DASHBOARD*/
+.menu-item:first-child .menu-icon {
+  width: 56px;
+  height: 56px;
+  transform: none;
+}
+
+.menu-item:first-child .menu-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar-spacer {
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.sidebar-spacer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* HEADER STYLES */
+
+header {
+  padding: 2rem 0;
+  box-shadow: 0 7px 20px -1px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  place-self: center;
+  width: 50%;
+  gap: 1rem;
+}
+
+.search-bar {
+  background-color: #e2e2e2;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.user-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6%;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.user-greetings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.avatar {
+  width: 82px;
+  height: 82px;
+  border-radius: 50px;
+}
+
+.btn-actions {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn-actions button {
+  background-color: rgb(68, 134, 255);
+  padding: 0.8rem 0.5rem;
+  width: 7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 40px;
+}
