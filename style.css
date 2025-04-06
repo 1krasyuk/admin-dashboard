@@ -12,7 +12,7 @@ body {
 
 .sidebar {
   height: 100vh;
-  background-color: rgb(59, 180, 255);
+  background-color: rgb(46, 175, 255);
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ body {
 .menu-text {
   text-align: left;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 600;
   padding-left: 0.5rem;
 }
 
@@ -84,7 +84,9 @@ body {
 /* HEADER STYLES */
 
 header {
-  padding: 2rem 0;
+  position: relative;
+  height: 20vh;
+  padding: 1.5rem 0;
   box-shadow: 0 7px 20px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,17 +112,17 @@ header {
   justify-content: space-between;
   margin: 0 6%;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 .user-greetings {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .avatar {
-  width: 82px;
-  height: 82px;
+  width: 72px;
+  height: 72px;
   border-radius: 50px;
 }
 
@@ -138,4 +140,127 @@ header {
   color: white;
   border: none;
   border-radius: 40px;
+}
+
+/* PROJECTS STYLES */
+
+main {
+  height: 80vh;
+  background-color: rgb(222, 236, 255);
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-left: 7px solid #ffc400;
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.project-description {
+  color: #555;
+  flex-grow: 1;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.action-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*Announcements and trending styles*/
+
+.announcements-and-trending {
+  margin-left: 1rem;
+}
+
+.announcements,
+.trending {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-titles {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.announcements-description {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.announcements-spacer {
+  height: 1px;
+  background-color: #555;
+  opacity: 0.5;
+  margin: 1rem 0;
+}
+
+.trending-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.trending-item p:first-child {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.trending-item p {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.trending-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
